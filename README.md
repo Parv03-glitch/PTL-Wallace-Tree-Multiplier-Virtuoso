@@ -86,7 +86,7 @@ DRC and LVS were run with the Cadence Virtuoso Layout Suite and GPDK090 rules. A
 
 | NAND | AND | PTL 2:1 MUX |
 |------|-----|-------------|
-| ![NAND layout](nand_layout.png) | ![AND layout](and_layout.png) | ![PTL MUX layout](pass_trans_layout_mux.png) |
+| ![NAND layout](layout/nand_layout.png) | ![AND layout](layout/and_layout.png) | ![PTL MUX layout](layout/pass_trans_layout.png) |
 
 ## Limitations
 
