@@ -19,7 +19,7 @@ Each block was designed, simulated and verified before being used in the next le
 
 | Block | Schematic |
 |-------|-----------|
-| NOT | ![NOT](schematics/01_not.png) |
+| NOT | ![NOT](schematics/not_gate.png) |
 | NAND | ![NAND](schematics/02_nand.png) |
 | AND (NAND + NOT) | ![AND](schematics/03_and.png) |
 | XOR (pass-gate style) | ![XOR](schematics/04_xor.png) |
