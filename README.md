@@ -26,7 +26,7 @@ Each block was designed, simulated and verified before being used in the next le
 | 2:1 MUX (Boolean-direct CMOS) | ![MUX](schematics/2x1_mux.png) |
 | Conventional full adder (38 T) | ![Conventional FA](schematics/con_fa.png) |
 | PTL 2:1 MUX | ![PTL MUX](schematics/pass_trans.png) |
-| Proposed PTL full adder (18 T) | ![Proposed FA](schematics/proposed_adder.png) |
+| Proposed PTL full adder (18 T) | ![Proposed FA](schematics/proprosed_adder.png) |
 
 ## Proposed full adder
 
@@ -41,7 +41,7 @@ When B = C: SUM = A and CARRY = B. When B ≠ C: SUM = A' and CARRY = C. The sel
 
 The Reduced Complexity Wallace algorithm keeps the same number of reduction stages as a conventional Wallace tree while using identical adder cells throughout, which simplifies routing.
 
-![Reduction algorithm](schematics/10_reduction_algorithm.png)
+![Reduction algorithm](schematics/reduced_complexity.png)
 
 ## Verification (90nm, GPDK090)
 
