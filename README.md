@@ -2,7 +2,7 @@
 
 A 4×4 Reduced Complexity Wallace Tree Multiplier (RCWTM) built bottom-up at transistor level, using a proposed **18-transistor pass-transistor-logic (PTL) full adder**. Designed and simulated in Cadence Virtuoso with the **GPDK090 (90nm)** PDK.
 
-![4x4 RCWTM schematic](schematics/09_wtm_4x4.png)
+![4x4 RCWTM schematic](schematics/WTM.png)
 
 ## Highlights
 
@@ -20,13 +20,13 @@ Each block was designed, simulated and verified before being used in the next le
 | Block | Schematic |
 |-------|-----------|
 | NOT | ![NOT](schematics/not_gate.png) |
-| NAND | ![NAND](schematics/02_nand.png) |
-| AND (NAND + NOT) | ![AND](schematics/03_and.png) |
-| XOR (pass-gate style) | ![XOR](schematics/04_xor.png) |
-| 2:1 MUX (Boolean-direct CMOS) | ![MUX](schematics/05_mux_cmos.png) |
-| Conventional full adder (38 T) | ![Conventional FA](schematics/06_fa_conventional.png) |
-| PTL 2:1 MUX | ![PTL MUX](schematics/07_mux_ptl.png) |
-| Proposed PTL full adder (18 T) | ![Proposed FA](schematics/08_fa_proposed.png) |
+| NAND | ![NAND](schematics/nand_gate.png) |
+| AND (NAND + NOT) | ![AND](schematics/and_gate.png) |
+| XOR (pass-gate style) | ![XOR](schematics/xor_gate.png) |
+| 2:1 MUX (Boolean-direct CMOS) | ![MUX](schematics/2x1_mux.png) |
+| Conventional full adder (38 T) | ![Conventional FA](schematics/con_fa.png) |
+| PTL 2:1 MUX | ![PTL MUX](schematics/pass_trans.png) |
+| Proposed PTL full adder (18 T) | ![Proposed FA](schematics/proposed_adder.png) |
 
 ## Proposed full adder
 
@@ -50,7 +50,7 @@ The Reduced Complexity Wallace algorithm keeps the same number of reduction stag
 
 | Input sweep | Output product |
 |-------------|----------------|
-| ![Input waveform](waveforms/input_sweep.png) | ![Output waveform](waveforms/output_product.png) |
+| ![Input waveform](waveforms/inputs.png) | ![Output waveform](waveforms/output.png) |
 
 ## Results
 
@@ -86,7 +86,7 @@ DRC and LVS were run with the Cadence Virtuoso Layout Suite and GPDK090 rules. A
 
 | NAND | AND | PTL 2:1 MUX |
 |------|-----|-------------|
-| ![NAND layout](layout/nand.png) | ![AND layout](layout/and.png) | ![PTL MUX layout](layout/ptl_mux.png) |
+| ![NAND layout](nand_layout.png) | ![AND layout](and_layout.png) | ![PTL MUX layout](pass_trans_layout_mux.png) |
 
 ## Limitations
 
