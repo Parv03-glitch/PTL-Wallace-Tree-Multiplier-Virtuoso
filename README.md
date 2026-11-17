@@ -68,8 +68,6 @@ Prior-work figures are as reported in [8] and were not re-simulated under the sa
 
 ### Cross-technology comparison (RCWTM)
 
-> **Note:** Only the **90nm** results were simulated (GPDK090). The **45nm** and **180nm** columns are **estimates** derived from the 90nm results. Method: **[ADD YOUR ESTIMATION METHOD HERE]**. Treat them as projections, not measured results.
-
 | Parameter | 45nm (est.) | 90nm (simulated) | 180nm (est.) |
 |-----------|-------------|------------------|--------------|
 | Supply voltage (V) | 1.0 | 1.0 | 1.8 |
